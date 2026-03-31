@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Background Foto</title>
+  <style>
+    body { text-align: center; font-family: Arial; }
+    canvas { border: 1px solid #333; margin-top: 10px; max-width: 90%; }
+    #drop-area {
+      width: 80%;
+      height: 300px;
+      border: 2px dashed #4caf50;
+      margin: 20px auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+      color: #4caf50;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Edit Background Foto</h1>
+
+  <!-- Drag and Drop Area -->
+  <div id="drop-area">
+    <span>Drag & Drop Foto di sini</span>
+  </div>
+
+  <canvas id="canvas"></canvas><br><br>
+
+  <button id="removeBgBtn">Hapus Background Putih</button>
+  <input type="color" id="bgColor" value="#ffffff">
+  <button id="changeBgBtn">Ganti Background</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
